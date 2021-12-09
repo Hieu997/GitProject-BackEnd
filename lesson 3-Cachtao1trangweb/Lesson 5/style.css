@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+p,
+label {
+  margin: 0;
+  font-size: 20px;
+}
+input {
+  margin-bottom: 25px;
+}

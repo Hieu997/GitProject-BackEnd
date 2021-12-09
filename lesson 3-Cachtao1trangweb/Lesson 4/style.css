@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 25px;
+}
+ul > li {
+  font-weight: bold;
+  padding: 5px;
+}
+ol > li {
+  padding: 2px;
+  margin-left: 30px;
+}
