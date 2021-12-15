@@ -1,0 +1,15 @@
+let A = parseInt(prompt("Số tiền vay 'VNĐ': "));
+let B = parseFloat(prompt("Lãi suất  '%': "));
+let C = parseInt(prompt("Số năm: "));
+document.write("Số tiền vay: " + A + " VNĐ");
+document.write("<br/>");
+document.write("Lãi suất: " + B + "%");
+document.write("<br/>");
+document.write("Số năm: " + C + " năm");
+document.write("<br/>");
+document.write("<br/>");
+let tienlai = A * (B / 100) * C;
+let tong = A + tienlai;
+document.write("Số tiền lãi sau " + C + " năm là: " + tienlai + " VNĐ");
+document.write("<br/>");
+document.write("Tổng số tiền phải trả là: " + tong + " VNĐ");
