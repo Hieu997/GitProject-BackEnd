@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài tập 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form method = get action="index.html">
+    <input type="text" id="result">
+    <table>
+      <tr>
+        <td><Button type="button" value="1" onclick="click1()" id="btn">1</Button></td>
+        <td><Button type="button" value="2" onclick="click2()" id="btn" >2</Button></td>
+        <td><Button type="button" value="3" onclick="click3()" id="btn">3</Button></td>
+        <td><Button type="button" value="+" onclick="clickPlus()" id="btn">+</Button></td>
+      </tr>
+      <tr>
+        <td><Button  type="button" value="4" onclick="click4()" id="btn">4</Button></td>
+        <td><Button  type="button" value="5" onclick="click5()" id="btn">5</Button></td>
+        <td><Button  type="button" value="6" onclick="click6()" id="btn">6</Button></td>
+        <td><Button  type="button" value="-" onclick="clickMinus()" id="btn">-</Button></td>
+      </tr>
+      <tr>
+        <td><Button  type="button" value="7" onclick="click7()" id="btn">7</Button></td>
+        <td><Button  type="button" value="8" onclick="click8()" id="btn">8</Button></td>
+        <td><Button  type="button" value="9" onclick="click9()" id="btn">9</Button></td>
+        <td><Button  type="button" value="*" onclick="clickMulti()" id="btn">X</Button></td>
+      </tr>
+      <tr>
+        <td><Button  type="reset" onclick="reset()">C</Button></td>
+        <td><Button  type="button" value="0" onclick="click0()" id="btn">0</Button></td>
+        <td><Button  type="button" onclick="equal()">=</Button></td>
+        <td><Button  type="button" value="/" onclick="clickDivi()" id="btn">/</Button></td>
+      </tr>
+    </table>
+  </form>
+  <script src="JS-index.js"></script>
+</body>
+</html>

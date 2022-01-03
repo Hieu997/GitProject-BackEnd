@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+div > p {
+  display: inline-block;
+  margin: 0;
+  margin-right: 60px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+div > p:first-child {
+  margin-left: 50px;
+}
+div > p:nth-child(2) {
+  margin-right: 10px;
+}
+
+input {
+  display: inline-block;
+  margin: 0;
+  margin-right: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+#toCurrency {
+  display: inline-block;
+  margin: 0;
+  margin-right: 10px;
+  cursor: pointer;
+}
+#fromCurrency {
+  display: inline-block;
+  margin: 0;
+  margin-right: 30px;
+  cursor: pointer;
+}
+button {
+  display: inline-block;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#result {
+  color: blue;
+}

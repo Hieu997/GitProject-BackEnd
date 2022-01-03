@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+form {
+  border: 5px solid black;
+  width: 250px;
+  height: 290px;
+  padding: 10px;
+}
+input {
+  width: 220px;
+  height: 40px;
+  text-align: right;
+  margin-bottom: 10px;
+  border: 2px solid black;
+  font-size: 25px;
+  border-radius: 5px;
+}
+
+button {
+  width: 45px;
+  height: 45px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}

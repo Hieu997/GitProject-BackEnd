@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài tập 1</title>
+</head>
+<body>
+  <form action="index.html">
+    <h2>Tính điểm Đại Học khối D</h2>
+    Môn Toán <input type="text" id="math" size="10"> <br><br>
+    Môn Văn <input type="text" id="literality" size="10"><br><br>
+    Môn Anh <input type="text" id="english" size="10"><br><br>
+    Khu Vực <select id="area">
+      <option value="KV1">KV1</option>
+      <option value="KV2">KV2</option>
+      <option value="KV2NT">KV2 - NT</option>
+      <option value="KV3">KV3</option>
+    </select>
+    <br>
+    <br>
+    <button type="button" onclick="result()" style="margin-left: 65px; margin-right: 20px;">Tính Điểm</button>
+    <button type="reset">Reset</button>
+    <p id="resultWirte" style="color: red;"></p>
+  </form>
+    <script src="JS-index.js"></script>
+</body>
+</html>
