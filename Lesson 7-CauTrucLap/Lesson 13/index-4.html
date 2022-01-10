@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<p id="number"></p>
+<p id="numBer"></p>
+<body>
+  <script>
+     let a = 1;
+    let b = 1;
+    let result;
+    for (i = 1; i <= 20; i++) {
+      document.getElementById("number").innerText += a + " - " ;
+      result = a + b;
+      a = b;
+      b = result;
+      if (a % 5 == 0) {
+        document.getElementById("numBer").innerText += a + " - " ;
+        document.getElementById("numBer").style.color = "red";
+      }
+  }
+  </script>
+</body>
+</html>
