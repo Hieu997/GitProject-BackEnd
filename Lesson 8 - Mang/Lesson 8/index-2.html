@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let numbers = prompt("Hãy nhập giá trij của bạn:");
+    let nums = numbers.toString();
+    let result = [nums[0]];
+    for(i = 1; i < nums.length; i++) {
+      if ((nums[i -1]%2 == 0) && (nums[i]%2 == 0)) {
+        result.push(" - ", nums[i]);
+      } else {
+        result.push(nums[i]);
+      }
+    }
+    document.write(result.join(" "));
+  </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let showWrite = prompt("Hãy nhập giá trị của bạn:");
+    let upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    let lower = "abcdefghijklmnopqrstuvwxyz";
+    let result = [];
+    for (i = 0; i<showWrite.length; i++) {
+      if (upper.includes(showWrite[i])) {
+        result.push(showWrite[i].toLowerCase());
+      } else if (lower.includes(showWrite[i])) {
+        result.push(showWrite[i].toUpperCase());
+      } else {
+        result.push(showWrite[i]);
+      }
+    }
+    document.write("Result: " + result.join(""));
+  </script>
+</body>
+</html>
