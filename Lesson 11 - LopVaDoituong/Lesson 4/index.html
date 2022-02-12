@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <canvas id="my-canvas"width="500px" height="500px" style="border: 2px solid blue;"></canvas>
+  <script src="Rectangle.js"></script>
+  <script>
+    let rectangle = new Rectangle(200, 100, "blue");
+    let xRect = 100;
+    let yRect = 100;
+    let wRect = rectangle.getWidth();
+    let hRect = rectangle.getHeight();
+    function drawRect(xRect, yRect, wRect, hRect) {
+      let canvas = document.getElementById("my-canvas");
+      let ctx = canvas.getContext("2d");
+      let color = rectangle.getColor();
+      ctx.beginPath();
+      ctx.rect(xRect, yRect, wRect, hRect);
+      ctx.fillStyle = color;
+      ctx.fill();
+    }
+    drawRect(xRect, yRect, wRect, hRect);
+    document.write("<br/>");
+    document.write(`Diện tích hình chữ nhật là: ${rectangle.getAcreage()}`);
+    document.write("<br/>");
+    document.write(`Chu vi hình chữ nhật là: ${rectangle.getPerimeter()}`);
+  </script>
+</body>
+</html>

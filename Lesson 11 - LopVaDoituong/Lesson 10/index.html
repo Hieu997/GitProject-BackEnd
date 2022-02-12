@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script src="Cat.js"></script>
+  <script src="Rat.js"></script>
+  <script>
+    let mouse = new Rat("jerry", 10, 2, true, true);
+    let cat = new Cat("Tom", 15, 15, true);
+    console.log(cat.catch(Rat));
+    console.log(cat.eat(Rat));
+  </script>
+</body>
+</html>
