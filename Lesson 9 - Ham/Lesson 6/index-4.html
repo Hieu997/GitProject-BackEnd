@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button type="button" onclick="showS()">Tính diện tích hình tròn</button>
+  <button type="button" onclick="showC()">Tính diện tích hình tròn</button>
+  <button type="button" onclick="showSC()">Tính diện tích hình tròn</button>
+  <script>
+    function showS()  {
+      let numbers = parseFloat(prompt("Hẫy nhặp giá trị của bạn"));
+      alert("Diện tích hình tròn là " + ((numbers*numbers)*3.14));
+    }
+    function showC()  {
+      let numbers = parseFloat(prompt("Hẫy nhặp giá trị của bạn"));
+      alert("Diện tích hình tròn là " + (numbers*3.14));
+    }
+    function showSC()  {
+      let numbers = parseFloat(prompt("Hẫy nhặp giá trị của bạn"));
+      alert("Diện tích hình tròn là " + ((numbers*numbers)*3.14) + " và chu vi hình tròn là " + (numbers*3.14));
+    }
+  </script>
+</body>
+</html>

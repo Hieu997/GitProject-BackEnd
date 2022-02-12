@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function findX() {
+      let numbers = prompt("Hãy nhập vào giá trị của bạn:");
+      let nums = "0123456789";
+      let result = "" ;
+      for (i=0; i < numbers.length; i++){
+        if (nums.includes(numbers[i])) {
+          console.log(numbers[i])
+          result += numbers[i];
+        }
+      }
+      if (result == numbers) {
+        alert(numbers + " là 1  số");
+      } else {
+        alert("Đây không phải là số");
+      }
+    }
+    findX();
+  </script>
+</body>
+</html>

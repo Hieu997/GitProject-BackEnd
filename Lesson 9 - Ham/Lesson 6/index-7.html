@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function findMinX() {
+      let n1 = +prompt("Hãy nhặp vào giá trị thứ 1:");
+      let n2 = +prompt("Hãy nhặp vào giá trị thứ 2:");
+      let n3 = +prompt("Hãy nhặp vào giá trị thứ 3:");
+      let result = null;
+      if (n1 <= n2 && n1 <= n3) {
+        result = n1;
+      } else if(n2 <= n3 && n2 <= n1) {
+        result = n2;
+      } else {
+        result = n3;
+      }
+      document.write("Số thứ 1 là: " + n1 + "<br/>");
+      document.write("Số thứ 2 là: " + n2+ "<br/>");
+      document.write("Số thứ 3 là: " + n3+ "<br/>");
+      document.write("Số nhỏ nhất là: " + result)
+    }
+    findMinX()
+  </script>
+</body>
+</html>

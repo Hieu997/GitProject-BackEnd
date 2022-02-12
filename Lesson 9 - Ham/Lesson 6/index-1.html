@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function sum() {
+      let a = parseFloat(prompt("Hãy nhập vào số thứ 1:"))
+      let b = parseFloat(prompt("Hãy nhặp vào số thứ 2:"));
+      let sum;
+      for (i = 1; i < 10; i++) {
+        if (a > b) {
+          alert("Số thứ 1 lớn hơn số thứ 2, xin hãy nhặp lại");
+          break;
+        } else {
+          sum = a + b;
+          alert(sum);
+          break;
+        }
+      }
+      }
+      sum();
+  </script>
+</body>
+</html>

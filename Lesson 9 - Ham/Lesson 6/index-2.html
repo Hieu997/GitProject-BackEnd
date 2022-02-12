@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let arrOne = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let arrTwo = ["Ursa Minor", "Tarurus" , "Cygnus", "Lyra", "Aquila", "Ursa Major",  "Leo"]
+    let newarr = [];
+    function findX(arrOne, arrTwo, newarr) {
+      let n = prompt("Hãy nhập tên ngôi sao của bạn:");
+      for (i = 0; i < arrOne.length; i++) {
+          if (arrOne.indexOf(n) != -1) {
+            alert(arrOne[arrOne.indexOf(n)] + " => " + arrTwo[arrOne.indexOf(n)]);
+            break;
+          } else {
+            alert("Không có ngôi sao của bạn trong danh sách tìm kiếm");
+            break;
+          }
+      }
+    }
+    findX(arrOne, arrTwo, newarr);
+  </script>
+</body>
+</html>
